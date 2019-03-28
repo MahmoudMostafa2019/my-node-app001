@@ -8,14 +8,9 @@ const port=process.env.port||3100;
 
 // Returns: '/foo/bar/baz/asdf'
 
-
-
 console.log(`direction of view path is: ${pathJoin} `);
 
-
 app.use(express.static(pathJoin));
-
-
 
 
 var server = app.listen(port, function () {
